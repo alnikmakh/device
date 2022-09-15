@@ -3,14 +3,20 @@
     <head>
         <meta charset="utf-8">
         <title>Device - Главная страница</title>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <header class="main-header">
-            <h1 class="main-header-navigation">Device</h1>
-            <nav>
+        <header class="header-logo">
+            <h1 class="Logo">Device</h1>
+        </header>
+        </header>
+        <header class="main-header">            
+            <nav class="main-navigation">
                 <p class="main-header-form">
-                    <!-- Тут поиск -->
+                    <label for="search-input" class="visually-hidden"> поиск по тексту</label>
+                    <input id="search-input" type="text" placeholder="поиск по сайту">
                 </p>
+
                 <ul class="user-navigation">
                     <li class="login-link">Вход</li>                    
                 </ul>
@@ -22,6 +28,7 @@
                         <a href="cart.html">Корзина</a>
                     </li>
                 </ul>
+
                 <ul class="site-navigation">
                     <li>
                         <a href="catalog.html">Каталог товаров</a>
@@ -41,9 +48,11 @@
         <main class="container">
             <section class="adv-section">
                 <h1 class="hidden-header">Реклама лучшей палки</h1>
+                
                 <div class="adv-section-image">
-                    <img src="" alt="Картинка самой длинной селфи-палки">
+                    <img src="" alt="Картинка длинной селфи-палки">
                 </div>
+
                 <div class="adv-section-description">
                     <h2 class="adv-section--desctription-title"></h2>
                     <p class="adv-section--desctription-text">
@@ -96,6 +105,7 @@
             </section>
 
             <section class="services">
+                <h1 class="visually-hidden">Меню сервисов</h1>
                 <div class="services-left">
                     <ul class="services-list">
                         <li class="services-list-sel">
@@ -147,12 +157,74 @@
                     </li>
                 </ul>
             </section>
-            <section class="last-section">
-                <h1 class="hidden-header">Последняя секция</h1>
+            <section class="section-about-us">
+                <h1 class="header1">О нас</h1>
                 <p>
-                    
+                    Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
                 </p>
+                <p>
+                    Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+                </p>
+                <ul class="about-us-list">
+                    <li>Деловые Линии</li> 
+                    <li>Автотрейдинг</li>
+                    <li>ЖелДорЭкспедиция</li>
+                </ul>
+                <a class="linedthrou-link" href="about-us.html">Подробнее о нас</a>
+            </section>
+            <section class="section-contacts">
+                <h1 class="header1">О нас</h1>
+                <p>
+                    Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+                </p>
+                <img src="img/minimap.png" alt="Адрес: Улица Строителей, дом 15">
+                
+                <a class="linedthrou-link" href="contact-us.html">Напишите нам</a>
             </section>
         </main>
+        <footer>
+            <div>
+                <h1 class="footer-logo">Device</h1>
+                <ul class="footer-menu">
+                    <li><a href="login.html"> Войти</a></li>
+                    <li><a href="compare.html">Сравнить</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>г.Москва, ул.Строителей, 15</span>
+                <ul>
+                    <li>Доставка</li>
+                    <li>Гарантия</li>
+                    <li>Контакты</li>
+                </ul>
+                <span>Тел.: +7 (495) 495-95-95</span>
+            </div>
+            <div class="footer-bottom">
+                <ul class="bottom-icons">
+                    <li><a href="Facebook.com" aria-label="Фейсбук"></a></li>
+                    <li><a href="Inctagram.com" aria-label="Инстаграм"></a></li>
+                    <li><a href="twitter.com" aria-label="Твиттер"></a></li>
+                </ul>
+
+            </div>
+        </footer>
+        <section class="modal-write-us">
+            <h1 class="visually-hidden">Форма отправки сообщения</h1>
+            <p class="visually-hidden">Введите текст и ваши данные</p>
+            <form action="https://echo.htmlacademy.ru" method="post">         
+                <label class="modal-write-fio">Ваше имя:<input type="text" name="UserName"></label>
+                <label class="modal-write-email">Ваш e-mail:<input type="email" name="email"></label>
+                <label class="modal-write-text">Текст письма:<input type="text" name="Message"></label>
+                <button class="form-button" type="submit">Отправить</button>
+                <button class="modal-close-button" type="button">X</button>
+            </form>  
+        </section>
+        <section class="modal-map">
+            <h1>Карта</h1>
+            <p>
+                <button class="modal-close-button" type="button">X</button>
+            </p>
+        </section>
     </body>
 </html>
