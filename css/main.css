@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'gilroy_extrabold';
+    src: url("../fonts/gilroyextrabold.woff2");
+}
+
+.visually-hidden{
+    margin: -1;
+    padding: 0px;
+    position: absolute;
+    height: 1px;
+    top: 0%;
+    left: 0%;
+    width: 1px;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+.main-navigation{
+    margin: auto;
+    margin-top: 0px;
+    padding: 6px 60px;
+    width: 1040px;    
+
+    background-color: #f7e296;
+    
+}
+
+#search-input{
+    border-style: none;
+    background-color: transparent;
+    background-image: url("../img/search.svg");
+    background-size: 16px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    
+    
+    padding: 0%;
+    padding-left: 38px;
+    margin: 0%;
+
+
+    font-family: sans-serif;
+    font-size: 15px;
+    opacity: 1;
+    color: black;
+    vertical-align: middle;
+}
+
+#search-input::placeholder{
+    opacity: 0.3;
+}
+
+.header-logo{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0px 60px;
+   
+    width: 1040px; 
+    height: 18px;   
+
+    background-color: #f7e296 ;
+  
+}
+
+.Logo{    
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 520px);
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+    opacity: 1;
+
+    font-family: "gilroy_extrabold", Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: black;
+}
+  
